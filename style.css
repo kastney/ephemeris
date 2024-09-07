@@ -37,6 +37,11 @@ h3 {
     margin: 80px 20px 10px; /* Define margens superior, lateral e inferior para h3 */
 }
 
+/* Estiliza h4 */
+h4 {
+    font-size: 1.5rem; /* Define o tamanho da fonte para h2 */
+}
+
 /* Estiliza links */
 a {
     color: white; /* Define a cor padrão dos links */
@@ -49,12 +54,19 @@ a:hover {
 /* Estiliza as seções */
 section {
     text-align: center; /* Centraliza o conteúdo dentro das seções */
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Estiliza inputs e botões dentro das seções */
 section input, section button {
     border-radius: 1.5rem; /* Define bordas arredondadas para inputs e botões */
     box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+/* Estiliza h2 dentro das seções */
+section h2 {
+    font-size: 2.5rem; /* Define o tamanho da fonte para h2 */
 }
 
 section input {
