@@ -1,0 +1,137 @@
+/* Importa a fonte Noto Sans do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: "Noto Sans", sans-serif; /* Define a fonte padrão para o texto */
+    background-color: #3b128c; /* Define a cor de fundo da página */
+    color: white; /* Define a cor do texto */
+    margin: 0; /* Remove as margens padrão do corpo */
+    padding: 0; /* Remove o padding padrão do corpo */
+}
+
+/* Estiliza o elemento header */
+header {
+    margin: 50px 30px; /* Define margens superior e lateral para o header */
+}
+
+/* Estiliza os títulos h1 e h2 */
+h1, h2 {
+    text-align: center; /* Centraliza o texto dos títulos */
+    margin: 0; /* Remove margens padrão dos títulos */
+}
+
+h1 {
+    font-size: 2.5rem; /* Define o tamanho da fonte para h1 */
+    letter-spacing: 0.4rem; /* Define o espaçamento entre letras para h1 */
+}
+
+h2 {
+    font-size: 1.2rem; /* Define o tamanho da fonte para h2 */
+    letter-spacing: 0.2rem; /* Define o espaçamento entre letras para h2 */
+}
+
+/* Estiliza h3 */
+h3 {
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: 80px 20px 10px; /* Define margens superior, lateral e inferior para h3 */
+}
+
+/* Estiliza links */
+a {
+    color: white; /* Define a cor padrão dos links */
+}
+
+a:hover {
+    color: cyan; /* Define a cor dos links ao passar o mouse */
+}
+
+/* Estiliza as seções */
+section {
+    text-align: center; /* Centraliza o conteúdo dentro das seções */
+}
+
+/* Estiliza inputs e botões dentro das seções */
+section input, section button {
+    border-radius: 1.5rem; /* Define bordas arredondadas para inputs e botões */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+section input {
+    width: calc(100% - 60px); /* Define a largura do input, considerando margens */
+    max-width: 300px; /* Define a largura máxima do input */
+    border: none; /* Remove a borda do input */
+    padding: 1rem; /* Define o espaçamento interno do input */
+    margin: 0 30px 1rem; /* Define margens esquerda, direita e inferior do input */
+    color: #45474B; /* Define a cor do texto dentro do input */
+    font-size: 1rem; /* Define o tamanho da fonte dentro do input */
+}
+
+section button {
+    padding: 0.8rem 1.2rem; /* Define o espaçamento interno do botão */
+    border: none; /* Remove a borda do botão */
+    background-color: #ba00b7; /* Define a cor de fundo do botão */
+    color: white; /* Define a cor do texto do botão */
+    font-size: 1rem; /* Define o tamanho da fonte do botão */
+    cursor: pointer; /* Define o cursor como ponteiro ao passar sobre o botão */
+}
+
+/* Estiliza a seção de resultados da pesquisa */
+.resultados-pesquisa {
+    margin-bottom: 50px; /* Define a margem inferior para a seção de resultados */
+    letter-spacing: 0.1rem; /* Define o espaçamento entre letras na seção de resultados */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background-color: #5422b8; /* Define a cor de fundo para cada item de resultado */
+    border-radius: 0.6rem; /* Define bordas arredondadas para cada item de resultado */
+    margin: 0 20px 1rem; /* Define margens esquerda, direita e inferior para cada item de resultado */
+    padding: 1rem; /* Define o espaçamento interno para cada item de resultado */
+    text-align: left; /* Alinha o texto à esquerda dentro de cada item de resultado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve ao item de resultado */
+}
+
+.item-resultado img {
+    width: 100%; /* Define a largura da imagem como 100% do container */
+    height: 250px; /* Define a altura da imagem */
+    object-fit: cover; /* Faz com que a imagem cubra o container sem distorção */
+    margin-top: 10px; /* Define a margem superior para a imagem */
+}
+
+.item-resultado strong {
+    font-size: 18px; /* Define o tamanho da fonte para o texto em negrito */
+}
+
+/* Estiliza a tabela de eventos */
+.evento-tabela {
+    width: 100%; /* Define a largura da tabela como 100% do container */
+    border-collapse: collapse; /* Remove o espaço entre as bordas das células da tabela */
+    margin-bottom: 1rem; /* Define a margem inferior da tabela */
+}
+
+/* Estiliza as células da tabela */
+.evento-tabela th, .evento-tabela td {
+    padding: 0.75rem; /* Define o espaçamento interno das células */
+    text-align: left; /* Alinha o texto à esquerda nas células */
+    border-bottom: 2px solid #6732d1; /* Adiciona uma linha de separação entre as linhas da tabela */
+}
+
+/* Estiliza a linha da tabela ao passar o mouse */
+.evento-tabela tr:hover {
+    background-color: #6732d1; /* Define a cor de fundo ao passar o mouse sobre uma linha da tabela */
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: rgb(13, 0, 26); /* Define a cor de fundo do rodapé */
+    margin-top: 50px; /* Define a margem superior do rodapé */
+    padding: 20px; /* Define o padding interno do rodapé */
+    text-align: center; /* Centraliza o texto no rodapé */
+    font-size: 12px; /* Define o tamanho da fonte no rodapé */
+}
+
+/* Estiliza o texto de copyright */
+.copyright {
+    margin-top: 50px; /* Define a margem superior para o texto de copyright */
+}

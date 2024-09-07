@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <!-- Define o charset para UTF-8 -->
+        <meta charset="UTF-8">
+        <!-- Configura a viewport para dispositivos móveis -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Link para o arquivo CSS externo -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Título da página exibido na aba do navegador -->
+        <title>Ephemeris - Seu calendário astronômico</title>
+    </head>
+    <body>
+        <!-- Cabeçalho da página -->
+        <header>
+            <!-- Título principal -->
+            <h1>Ephemeris</h1>
+            <!-- Subtítulo -->
+            <h2>Seu calendário astronômico</h2>
+        </header>
+        <main>
+            <!-- Seção de pesquisa -->
+            <section>
+                <!-- Campo de pesquisa, que chama a função 'pesquisar' ao pressionar Enter -->
+                <input type="text" id="campo-pesquisa" placeholder="Digite o evento astronômico..." onkeypress="if(event.key === 'Enter') pesquisar()">
+                <!-- Botão de pesquisa que chama a função 'pesquisar' ao ser clicado -->
+                <button onclick="pesquisar()">Pesquisar</button>
+            </section>
+            <!-- Seção para exibir os resultados da pesquisa -->
+            <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+            <!-- Seção para exibir o próximo evento -->
+            <section class="resultados-pesquisa" id="proximo-evento"></section>
+            <!-- Seção sobre o Ephemeris -->
+            <section>
+                <!-- Subtítulo sobre o Ephemeris -->
+                <h3>Sobre o Ephemeris</h3>
+                <!-- Informações sobre o Ephemeris -->
+                <div class="item-resultado">
+                    <h4>O que é o Ephemeris?</h4>
+                    <p>Ephemeris é um calendário astronômico que te informa sobre eventos como eclipses e chuvas de meteoros. Com detalhes sobre visibilidade e dicas práticas, ele ajuda você a planejar suas observações. Mesmo em sua versão inicial, será seu guia para explorar o universo.</p>
+                </div>
+                <div class="item-resultado">
+                    <h4>Para quem é o Ephemeris?</h4>
+                    <p>Se você olha para o céu com curiosidade, o Ephemeris é para você. Seja um astrônomo amador ou experiente, nosso guia ajuda a explorar o céu noturno. O calendário astronômico mantém você informado sobre eventos como eclipses e chuvas de meteoros. Com dicas e informações, você poderá planejar suas observações facilmente.</p>
+                </div>
+                <div class="item-resultado">
+                    <h4>Porque se chama Ephemeris?</h4>
+                    <p><strong>Ephemeris</strong> é um termo astronômico que se refere a uma tabela que fornece a posição de um corpo celeste em um determinado momento. No nosso caso, o Ephemeris é seu calendário astronômico pessoal, um guia que te ajuda a acompanhar os eventos celestes mais importantes.</p>
+                </div>
+                <div class="item-resultado">
+                    <p>Não perca mais nenhum evento astronômico! Com o Ephemeris, você terá informações para planejar suas observações e desfrutar de um espetáculo celestial.<br>:^)</p>
+                </div>
+            </section>
+        </main>
+        <!-- Rodapé da página -->
+        <footer>
+            <!-- Créditos e links -->
+            <p>Projeto desenvolvido durante a <strong>Imersão Dev</strong> da <a target="_blank" rel="noopener noreferrer" href="https://www.alura.com.br/">Alura</a>, empregando a tecnologia <a target="_blank" href="https://gemini.google.com/">Google Gemini</a></p>
+            <!-- Direitos autorais -->
+            <p class="copyright">&copy; 2024 Kastney. Todos os direitos reservados</p>
+            <!-- Link para o GitHub -->
+            <p>Entre em contato pelo <a target="_blank" href="https://github.com/kastney">GitHub</a></p>
+        </footer>
+        <!-- Links para scripts externos -->
+        <script src="dados.js"></script> <!-- Script para dados -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script> <!-- Biblioteca Moment.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script> <!-- Biblioteca Moment Timezone -->
+        <script src="app.js"></script> <!-- Script principal da aplicação -->
+    </body>
+</html>
