@@ -12,7 +12,6 @@ function pesquisar() {
     // Verifica se a pesquisa está vazia ou contém apenas espaços
     if (/^\s*$/.test(pesquisa)) {
         secaoResultados.innerHTML = "<p>Por favor, digite um termo de pesquisa válido.</p>";
-        campoPesquisa.focus();  // Coloca o foco de volta no campo de pesquisa
         return;  // Interrompe a função
     }
 
@@ -59,7 +58,6 @@ function pesquisar() {
                 <p>Digite novamente e Tente Novamente</p>
             </div>
         `;
-        campoPesquisa.focus();  // Coloca o foco de volta no campo de pesquisa
     }
 
     // Atualiza a seção de resultados com o conteúdo gerado
@@ -97,6 +95,7 @@ function gerarHtmlEvento(evento) {
         <div class="item-resultado">
             <h2>${evento.nome}</h2>
             <img src="${evento.imagem}" alt="${evento.nome}">
+            <p class="direitos">Esta imagem possui<a target="_blank" href="${evento.imagem}">direitos altorais</a></p>
             <table class="evento-tabela">
                 <tbody>
                     <tr>

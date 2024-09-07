@@ -39,7 +39,7 @@ h3 {
 
 /* Estiliza h4 */
 h4 {
-    font-size: 1.5rem; /* Define o tamanho da fonte para h2 */
+    font-size: 1.5rem; /* Define o tamanho da fonte para h4 */
 }
 
 /* Estiliza links */
@@ -54,8 +54,8 @@ a:hover {
 /* Estiliza as seções */
 section {
     text-align: center; /* Centraliza o conteúdo dentro das seções */
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 800px; /* Define a largura máxima das seções */
+    margin: 0 auto; /* Centraliza a seção horizontalmente */
 }
 
 /* Estiliza inputs e botões dentro das seções */
@@ -66,7 +66,7 @@ section input, section button {
 
 /* Estiliza h2 dentro das seções */
 section h2 {
-    font-size: 2.5rem; /* Define o tamanho da fonte para h2 */
+    font-size: 2.5rem; /* Define o tamanho da fonte para h2 dentro das seções */
 }
 
 section input {
@@ -83,7 +83,7 @@ section button {
     padding: 0.8rem 1.2rem; /* Define o espaçamento interno do botão */
     border: none; /* Remove a borda do botão */
     background-color: #ba00b7; /* Define a cor de fundo do botão */
-    margin: 0 30px 1rem; /* Define margens esquerda, direita e inferior do input */
+    margin: 0 30px 1rem; /* Define margens esquerda, direita e inferior do botão */
     color: white; /* Define a cor do texto do botão */
     font-size: 1rem; /* Define o tamanho da fonte do botão */
     cursor: pointer; /* Define o cursor como ponteiro ao passar sobre o botão */
@@ -113,12 +113,12 @@ section button {
 }
 
 .item-resultado p {
-    text-align: justify;
+    text-align: justify; /* Justifica o texto dos parágrafos */
 }
 
 .item-resultado strong {
     font-size: 18px; /* Define o tamanho da fonte para o texto em negrito */
-    color: #ff24fb;
+    color: #ff93fd; /* Define a cor do texto em negrito */
 }
 
 /* Estiliza a tabela de eventos */
@@ -128,8 +128,9 @@ section button {
     margin-bottom: 1rem; /* Define a margem inferior da tabela */
 }
 
+/* Estiliza os links dentro dos itens de resultado */
 .item-resultado a {
-    margin-left: 10px;
+    margin-left: 10px; /* Define a margem esquerda para o link */
 }
 
 /* Estiliza as células da tabela */
@@ -139,13 +140,9 @@ section button {
     border-bottom: 2px solid #6732d1; /* Adiciona uma linha de separação entre as linhas da tabela */
 }
 
-/* Estiliza a linha da tabela ao passar o mouse */
-.evento-tabela tr:hover {
-    background-color: #6732d1; /* Define a cor de fundo ao passar o mouse sobre uma linha da tabela */
-}
-
+/* Estilizando as células da tabela */
 .evento-tabela td {
-    text-align: justify;
+    text-align: justify; /* Justifica o texto dentro das células */
 }
 
 /* Estiliza o rodapé */
@@ -162,10 +159,25 @@ footer {
     margin-top: 50px; /* Define a margem superior para o texto de copyright */
 }
 
+.direitos {
+    font-size: 8px;
+    margin: 0   ;
+    margin-left: auto;
+    width: fit-content;
+}
+
 /* Adapta o layout da tabela para telas pequenas */
 @media (max-width: 600px) {
     /* Torna as células Descrição e Como Observar em blocos */
     .evento-tabela td.descricao {
+        display: block; /* Torna as células blocos para facilitar a leitura */
+        width: 100%; /* Cada célula ocupa 100% da largura */
+        padding: 10px 10px; /* Ajusta o padding para telas menores */
+        box-sizing: border-box; /* Inclui padding e border na largura total */
+        border-bottom: 1px solid #6732d1; /* Adiciona a linha de separação entre as células */
+    }
+
+    .evento-tabela td.como-observar {
         display: block; /* Torna as células blocos para facilitar a leitura */
         width: 100%; /* Cada célula ocupa 100% da largura */
         padding: 10px 10px; /* Ajusta o padding para telas menores */

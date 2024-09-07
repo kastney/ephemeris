@@ -1,6 +1,6 @@
 # Ephemeris - Seu Calendário Astronômico 🌌🗓️
 
-O **Ephemeris** é um projeto web que serve como um calendário astronômico, permitindo que você acompanhe e observe eventos importantes como eclipses, superluas e oposições de planetas. Nosso objetivo é fornecer informações detalhadas sobre esses fenômenos celestes, ajudando entusiastas e astrônomos amadores a planejar e aproveitar ao máximo suas observações.
+O **Ephemeris** é um projeto web que serve como um calendário astronômico, permitindo que você acompanhe e observe eventos importantes como eclipses, superluas, oposições de planetas e muito mais. O objetivo é fornecer informações sobre esses fenômenos celestes, ajudando entusiastas e astrônomos amadores a planejar e aproveitar ao máximo suas observações.
 
 [🌐 Acesse o Ephemeris](https://ephemeris-amber.vercel.app)
 
