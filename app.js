@@ -11,7 +11,7 @@ function pesquisar() {
 
     // Verifica se a pesquisa está vazia ou contém apenas espaços
     if (/^\s*$/.test(pesquisa)) {
-        secaoResultados.innerHTML = "<p>Por favor, digite um termo de pesquisa válido.</p>";
+        secaoResultados.innerHTML = "<p>Por favor, digite um termo de pesquisa válido como:</p><p>Planetas... Lua... Eclipses... Ocultações... Oposições... Conjunções... Aproximações... Cometas... </p>";
         return;  // Interrompe a função
     }
 

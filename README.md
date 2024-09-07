@@ -20,6 +20,8 @@ Na tela inicial, você encontrará automaticamente o próximo evento astronômic
 
 A função de pesquisa permite encontrar eventos futuros usando termos relacionados ao nome, descrição, tipo ou tags dos eventos. Isso facilita a localização de eventos específicos e a obtenção rápida das informações relevantes.
 
+Por uma questão de performance, os resultados são limitados aos 3 próximos eventos encontrados a partir do termo de pesquisa.
+
 ## **🗓️ Detalhes dos Eventos**
 
 Cada evento é exibido com informações, como data, hora, descrição, dicas de observação, visibilidade, constelação, planetas envolvidos e magnitude. Isso garante que você tenha dados necessários para uma observação astronômicas.
