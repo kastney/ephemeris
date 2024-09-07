@@ -113,11 +113,11 @@ function gerarHtmlEvento(evento) {
                     </tr>
                     <tr>
                         <td><strong>Descrição</strong></td>
-                        <td>${evento.descricao}</td>
+                        <td class="descricao">${evento.descricao}</td>
                     </tr>
                     <tr>
                         <td><strong>Como Observar</strong></td>
-                        <td>${evento.comoObservar}</td>
+                        <td class="descricao">${evento.comoObservar}</td>
                     </tr>
                     <tr>
                         <td><strong>Visibilidade</strong></td>
